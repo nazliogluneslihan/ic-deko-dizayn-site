@@ -459,7 +459,7 @@ nav a.active::after{
   }
 
   .mobile-hero{
-    height:560px;
+    height:500px;
     border-radius:32px;
     overflow:hidden;
     position:relative;
@@ -481,12 +481,12 @@ nav a.active::after{
   }
 
   .mobile-content{
-    position:absolute;
-    left:28px;
-    right:26px;
-    top:285px;
-    z-index:2;
-  }
+  position:absolute;
+  left:28px;
+  right:26px;
+  top:210px;
+  z-index:2;
+}
 
   .mobile-mini{
     display:block;
@@ -498,7 +498,7 @@ nav a.active::after{
 
   .mobile-content h1{
     font-family:'Cormorant Garamond',serif;
-    font-size:56px;
+    font-size:50px;
     font-weight:500;
     color:#111;
     line-height:0.9;
@@ -506,7 +506,7 @@ nav a.active::after{
 
   .mobile-content h2{
     font-family:'Cormorant Garamond',serif;
-    font-size:50px;
+    font-size:48px;
     font-weight:500;
     color:#4d6742;
     line-height:1;
