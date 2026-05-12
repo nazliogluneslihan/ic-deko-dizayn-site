@@ -459,7 +459,7 @@ nav a.active::after{
   }
 
   .mobile-hero{
-    height:500px;
+    height:640px;
     border-radius:32px;
     overflow:hidden;
     position:relative;
@@ -475,30 +475,30 @@ nav a.active::after{
     background:linear-gradient(
       to right,
       rgba(247,242,234,0.96) 0%,
-      rgba(247,242,234,0.82) 42%,
-      rgba(247,242,234,0.20) 100%
+      rgba(247,242,234,0.82) 45%,
+      rgba(247,242,234,0.28) 100%
     );
   }
 
   .mobile-content{
-  position:absolute;
-  left:28px;
-  right:26px;
-  top:210px;
-  z-index:2;
-}
+    position:absolute;
+    left:28px;
+    right:24px;
+    top:220px;
+    z-index:2;
+  }
 
   .mobile-mini{
     display:block;
-    font-size:12px;
-    letter-spacing:5px;
+    font-size:11px;
+    letter-spacing:4px;
     color:#9a7650;
-    margin-bottom:14px;
+    margin-bottom:12px;
   }
 
   .mobile-content h1{
     font-family:'Cormorant Garamond',serif;
-    font-size:50px;
+    font-size:48px;
     font-weight:500;
     color:#111;
     line-height:0.9;
@@ -506,35 +506,37 @@ nav a.active::after{
 
   .mobile-content h2{
     font-family:'Cormorant Garamond',serif;
-    font-size:48px;
+    font-size:45px;
     font-weight:500;
     color:#4d6742;
     line-height:1;
   }
 
   .mobile-content p{
-    margin-top:22px;
-    font-size:15px;
-    line-height:1.75;
+    margin-top:15px;
+    font-size:13.5px;
+    line-height:1.55;
     color:#464646;
-    max-width:310px;
+    max-width:295px;
   }
 
   .mobile-actions{
-    margin-top:26px;
+    margin-top:18px;
     display:flex;
     align-items:center;
-    gap:20px;
+    gap:16px;
     flex-wrap:wrap;
   }
 
   .mobile-catalog{
+    display:inline-flex;
+    align-items:center;
     color:#111;
     text-decoration:none;
-    font-size:15px;
+    font-size:14px;
     font-weight:700;
     border-bottom:1px solid #a98d67;
-    padding-bottom:8px;
+    padding-bottom:7px;
     letter-spacing:0.3px;
   }
 
@@ -544,11 +546,13 @@ nav a.active::after{
   }
 
   .mobile-video{
+    display:inline-flex;
+    align-items:center;
     color:#222;
     text-decoration:none;
-    font-size:14px;
+    font-size:13.5px;
     border-bottom:1px solid #b39367;
-    padding-bottom:8px;
+    padding-bottom:7px;
   }
 
   .mobile-categories{
