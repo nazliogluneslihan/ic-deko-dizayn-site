@@ -364,59 +364,13 @@ nav a.active::after{
   font-size:15px;
 }
 
-/* WHY US */
+/* MOBILE HOME DEFAULT */
 
-.why-us{
-  padding:60px 24px;
-  background:#f7f2ea;
-  text-align:center;
+.mobile-home{
+  display:none;
 }
 
-.why-us h2{
-  font-size:28px;
-  letter-spacing:2px;
-  margin-bottom:30px;
-}
-
-.why-grid{
-  display:grid;
-  grid-template-columns:repeat(3,1fr);
-  gap:24px;
-  max-width:1100px;
-  margin:0 auto;
-}
-
-.why-card{
-  background:#f1e9dd;
-  border-radius:24px;
-  padding:34px 20px;
-}
-
-.why-icon{
-  width:58px;
-  height:58px;
-  background:#26351f;
-  color:white;
-  border-radius:50%;
-  margin:0 auto 18px;
-  display:flex;
-  align-items:center;
-  justify-content:center;
-  font-size:24px;
-}
-
-.why-card h3{
-  font-size:16px;
-  margin-bottom:12px;
-}
-
-.why-card p{
-  font-size:14px;
-  line-height:1.6;
-  color:#555;
-}
-
-/* RESPONSIVE */
+/* RESPONSIVE DESKTOP/TABLET */
 
 @media(max-width:1400px){
   .navbar{
@@ -467,200 +421,285 @@ nav a.active::after{
     padding-bottom:18px;
   }
 
-  .info-card:nth-child(2){
-    border-right:none;
-  }
-
   .category-grid{
     grid-template-columns:repeat(2,1fr);
   }
 }
 
+/* SPECIAL MOBILE DESIGN */
+
 @media(max-width:700px){
-  .navbar{
-    position:relative;
-    height:auto;
-    padding:28px 22px 22px;
-    flex-direction:column;
-    align-items:center;
-    gap:18px;
+
+  body{
     background:#f7f2ea;
   }
 
-  .logo-area{
-    justify-content:center;
-  }
-
-  .logo-box{
-    width:62px;
-    height:62px;
-    border-radius:18px;
-  }
-
-  .logo-text h2{
-    font-size:34px;
-  }
-
-  .logo-text p{
-    font-size:13px;
-    letter-spacing:10px;
-  }
-
-  nav{
-    display:flex !important;
-    width:100%;
-    justify-content:center;
-    flex-wrap:wrap;
-    gap:0;
-    order:3;
-  }
-
-  nav a{
-    font-size:12px;
-    padding:0 10px;
-    color:#1d2918;
-  }
-
-  nav a:not(:last-child){
-    border-right:1px solid #b8aa98;
-  }
-
-  nav a.active::after{
+  .navbar,
+  .hero,
+  .info-bar,
+  .categories{
     display:none;
   }
 
-  .wp-btn{
-    order:2;
-    width:85%;
-    max-width:310px;
+  .mobile-home{
+    display:block;
+    background:#f7f2ea;
+    padding:24px 18px 50px;
+  }
+
+  .mobile-top{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    gap:18px;
+  }
+
+  .mobile-logo{
+    display:flex;
+    align-items:center;
+    gap:14px;
+  }
+
+  .mobile-logo-box{
+    width:62px;
+    height:62px;
+    border:2px solid #b39367;
+    border-radius:18px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    color:#b39367;
+    font-size:28px;
+  }
+
+  .mobile-logo-text h2{
+    font-size:34px;
+    font-weight:800;
+    color:#111;
+    line-height:1;
+  }
+
+  .mobile-logo-text p{
+    margin-top:4px;
+    font-size:12px;
+    letter-spacing:10px;
+    color:#777;
+  }
+
+  .mobile-wp{
+    width:100%;
+    background:#26351f;
+    color:white;
     text-align:center;
-    padding:17px 20px;
+    padding:18px;
     border-radius:40px;
+    text-decoration:none;
+    font-weight:700;
     font-size:16px;
   }
 
-  .hero{
-    margin:0 14px;
-    min-height:720px;
-    height:auto;
-    border-radius:26px;
-    overflow:hidden;
-    padding:80px 24px 55px;
-    background-position:center right;
-    align-items:flex-start;
+  .mobile-menu{
+    margin-top:24px;
+    display:flex;
+    justify-content:center;
+    flex-wrap:wrap;
+    gap:10px;
   }
 
-  .hero-overlay{
+  .mobile-menu a{
+    text-decoration:none;
+    color:#222;
+    background:white;
+    padding:10px 16px;
+    border-radius:30px;
+    font-size:13px;
+    font-weight:600;
+    box-shadow:0 4px 12px rgba(0,0,0,0.06);
+  }
+
+  .mobile-hero{
+    margin-top:28px;
+    height:640px;
+    border-radius:32px;
+    overflow:hidden;
+    position:relative;
+    background:url("images/anasayfa.png");
+    background-size:cover;
+    background-position:center;
+    display:flex;
+    align-items:flex-end;
+    padding:34px 26px;
+    box-shadow:0 16px 36px rgba(0,0,0,0.12);
+  }
+
+  .mobile-overlay{
+    position:absolute;
+    inset:0;
     background:linear-gradient(
-      to right,
-      rgba(247,242,234,0.96) 0%,
-      rgba(247,242,234,0.82) 45%,
-      rgba(247,242,234,0.35) 100%
+      to top,
+      rgba(247,242,234,0.96) 12%,
+      rgba(247,242,234,0.76) 45%,
+      rgba(247,242,234,0.10) 100%
     );
   }
 
-  .hero-content{
-    max-width:100%;
+  .mobile-content{
+    position:relative;
+    z-index:2;
   }
 
-  .mini-title{
+  .mobile-mini{
     font-size:12px;
-    letter-spacing:6px;
-    margin-bottom:24px;
+    letter-spacing:5px;
+    color:#666;
   }
 
-  .mini-title::before{
-    width:36px;
-  }
-
-  .hero h1{
+  .mobile-content h1{
+    margin-top:18px;
     font-size:58px;
-    line-height:0.95;
+    line-height:0.9;
+    font-weight:800;
+    color:#111;
   }
 
-  .hero h2{
-    font-size:54px;
-    color:#536843;
+  .mobile-content h2{
+    font-size:56px;
+    color:#61704e;
+    font-family:'Cormorant Garamond',serif;
+    font-weight:500;
+    line-height:1;
   }
 
-  .hero p{
-    font-size:17px;
-    line-height:1.75;
-    max-width:330px;
+  .mobile-content p{
+    margin-top:24px;
+    font-size:16px;
+    line-height:1.8;
+    color:#303030;
+  }
+
+  .mobile-btn{
     margin-top:28px;
-  }
-
-  .hero-buttons{
-    margin-top:34px;
-    gap:24px;
-    flex-direction:column;
-    align-items:flex-start;
-  }
-
-  .main-btn{
     width:100%;
-    max-width:300px;
+    display:block;
     text-align:center;
-    padding:19px 28px;
-    font-size:15px;
+    background:#26351f;
+    color:white;
+    text-decoration:none;
+    padding:18px;
     border-radius:42px;
+    font-weight:700;
   }
 
-  .video-btn{
-    font-size:18px;
-    border-bottom:1px solid #222;
-    padding-bottom:8px;
+  .mobile-video{
+    margin-top:18px;
+    display:inline-block;
+    color:#111;
+    text-decoration:none;
+    font-size:16px;
+    border-bottom:1px solid #111;
+    padding-bottom:5px;
   }
 
-  .info-bar{
-    display:none;
+  .mobile-categories{
+    margin-top:48px;
   }
 
-  .categories{
-    padding:46px 22px 55px;
-  }
-
-  .section-top{
+  .mobile-categories h2{
     text-align:center;
+    font-size:28px;
+    margin-bottom:26px;
+    color:#171717;
+    letter-spacing:1px;
   }
 
-  .section-top h2{
-    font-size:26px;
-    letter-spacing:2px;
-  }
-
-  .section-top p{
-    display:none;
-  }
-
-  .category-grid{
-    margin-top:30px;
+  .mobile-category-grid{
     display:grid;
     grid-template-columns:1fr;
-    gap:20px;
+    gap:18px;
   }
 
-  .category-card{
-    height:230px;
-    border-radius:22px;
+  .mobile-card{
+    height:220px;
+    border-radius:24px;
+    overflow:hidden;
+    position:relative;
+    box-shadow:0 12px 28px rgba(0,0,0,0.12);
   }
 
-  .category-content{
-    background:#26351f;
-    padding:18px 20px;
-    text-align:left;
+  .mobile-card img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
   }
 
-  .category-content h3{
-    font-size:17px;
-    margin:0;
+  .mobile-card::after{
+    content:"";
+    position:absolute;
+    inset:0;
+    background:linear-gradient(
+      to top,
+      rgba(0,0,0,0.78),
+      rgba(0,0,0,0.10)
+    );
   }
 
-  .category-content span{
-    display:none;
+  .mobile-card span{
+    position:absolute;
+    left:22px;
+    bottom:20px;
+    z-index:2;
+    color:white;
+    font-size:22px;
+    font-weight:700;
   }
 
-  .why-grid{
+  .mobile-why{
+    margin-top:58px;
+  }
+
+  .mobile-why h2{
+    text-align:center;
+    margin-bottom:24px;
+    font-size:28px;
+    color:#171717;
+  }
+
+  .mobile-why-grid{
+    display:grid;
     grid-template-columns:1fr;
+    gap:18px;
   }
+
+  .mobile-why-card{
+    background:#efe6da;
+    border-radius:24px;
+    padding:28px 24px;
+    text-align:center;
+  }
+
+  .mobile-icon{
+    width:60px;
+    height:60px;
+    margin:0 auto 18px;
+    border-radius:50%;
+    background:#26351f;
+    color:white;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    font-size:24px;
+  }
+
+  .mobile-why-card h3{
+    margin-bottom:10px;
+    font-size:20px;
+    color:#151515;
+  }
+
+  .mobile-why-card p{
+    color:#555;
+    line-height:1.7;
+    font-size:15px;
+  }
+
 }
